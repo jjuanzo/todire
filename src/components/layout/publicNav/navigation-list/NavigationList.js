@@ -46,7 +46,7 @@ const NavigationList = ({
           </span>
         </li>
         <li>
-          <Link to="#">Pricing</Link>
+          <Link to="#">Support</Link>
         </li>
       </ul>
     </div>
