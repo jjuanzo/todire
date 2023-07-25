@@ -1,0 +1,145 @@
+.nav_drawer {
+  display: block !important;
+}
+
+.footer {
+  background-color: #eeebea !important;
+}
+
+.footer div {
+  width: 100%;
+  max-width: 1400px;
+  padding: 10px 60px;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer ul li a {
+  color: #3f3f3f;
+  font-weight: 600;
+  font-size: 12px;
+  padding-right: 20px;
+  margin-right: 20px;
+  border-right: 1px solid #727272;
+}
+
+.footer ul li:nth-child(3) a {
+  border-right: none;
+}
+
+.footer ul li a:hover {
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.nav_wrapper {
+  margin: 0 -24px;
+}
+
+.nav_content {
+  width: 100%;
+  max-width: 1400px;
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-top: 58px;
+}
+
+.nav_section {
+  padding-left: 20px;
+  border-left: 1px solid #e9ebf0;
+}
+
+.nav_content h1 {
+  font-size: 12px;
+  font-weight: 600;
+  padding-bottom: 18px;
+  margin: 0 40px 32px 0;
+  border-bottom: 1px solid #e9ebf0;
+  color: #727272;
+}
+
+.nav_content ul {
+  list-style: none;
+}
+
+.nav_content ul li {
+  cursor: pointer;
+  padding: 10px;
+  margin: -10px;
+  margin-bottom: 20px;
+  max-width: 220px;
+}
+
+.nav_content ul li:hover {
+  background-color: #fafaf9;
+  transition: all 0.3s ease;
+}
+
+.nav_content ul li h2 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #3f3f3f;
+}
+
+.nav_content ul li h2 svg {
+  margin: -2px 4px -2px 0;
+}
+
+.nav_content ul li h2 span {
+  margin: -6px 0 -6px 0;
+  font-size: 11px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav_content ul li p {
+  font-size: 12px;
+  color: #727272;
+  width: 200px;
+}
+
+.tech_list li {
+  margin-bottom: 0 !important;
+}
+
+.tech_list li:hover {
+  background-color: transparent !important;
+}
+
+.tech_list li span {
+  border: 1px solid #727272;
+  border-radius: 3px;
+  padding: 2px 4px;
+  margin: -4px 10px 4px 0;
+}
+
+.tech_list li svg {
+  margin: 2px 0 -2px 0;
+}
+
+.tech_list li h2 {
+  font-size: 12px !important;
+}
+
+@media only screen and (max-width: 1700px) {
+  .nav_content,
+  .footer div {
+    max-width: 1500px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav_drawer {
+    display: none !important;
+  }
+
+  .nav_content,
+  .footer div {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}

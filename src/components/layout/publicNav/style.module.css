@@ -1,0 +1,37 @@
+.container {
+  background-color: transparent;
+  z-index: 99;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.sticky_container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: white;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.wrapper {
+  position: sticky;
+  z-index: 3 !important;
+}
+
+.nav {
+  width: 100%;
+  max-width: 1400px;
+  padding: 8px 60px;
+}
+
+@media only screen and (max-width: 1700px) {
+  .nav {
+    max-width: 1500px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav {
+    padding: 8px 20px;
+  }
+}

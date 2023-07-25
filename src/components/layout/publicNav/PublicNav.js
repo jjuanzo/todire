@@ -1,41 +1,102 @@
-import { Button, Row } from 'antd';
+import { Row } from 'antd';
+import { useEffect, useState } from 'react';
+
+import NavigationAuth from './navigation-auth';
+import NavigationDropdown from './navigation-dropdown';
+import NavigationList from './navigation-list';
+
+import styles from './style.module.css';
 
 const PublicNav = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [activeNav, setActiveNav] = useState('');
+
+  const [navAnimation, setNavAnimation] = useState('');
+  const [navOffset, setNavOffset] = useState({
+    left: 0,
+    width: 0,
+  });
+  const [openNav, setOpenNav] = useState(false);
+
+  const handleScroll = () => {
+    const position = window.scrollY;
+    setScrollPosition(position);
+  };
+
+  const handleResetNav = () => {
+    setNavAnimation('slide');
+    setActiveNav('');
+    setOpenNav(false);
+    setNavOffset((state) => ({
+      left: state.left,
+      width: 0,
+    }));
+  };
+
+  const handleClickNav = (nav, target) => {
+    const openNavTemp = openNav && nav === activeNav ? false : true;
+
+    setNavAnimation(!activeNav || nav === activeNav ? 'slide' : 'offset');
+
+    setActiveNav(openNavTemp ? nav : '');
+    setOpenNav(openNavTemp);
+    setNavOffset((state) =>
+      openNavTemp
+        ? {
+            left: target.offsetLeft,
+            width: target.offsetWidth,
+          }
+        : { left: state.left, width: 0 }
+    );
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResetNav, { passive: true });
+
+    return () => {
+      window.removeEventListener('resize', handleResetNav);
+    };
+  }, []);
+
   return (
-    <nav>
-      <Row justify="space-between">
-        {/* Logo & Links */}
-        <div>
-          <img src="/image/logo_full.svg" alt="Logo" />
+    <div
+      className={
+        scrollPosition === 0 && !openNav
+          ? styles.container
+          : styles.sticky_container
+      }
+      onResize={handleResetNav}
+    >
+      <NavigationDropdown
+        open={openNav}
+        handleClose={() => setOpenNav(false)}
+        navAnimation={navAnimation}
+        activeNav={activeNav}
+      />
 
-          <ul>
-            <li>
-              <span>Why Todire?</span>
-            </li>
-            <li>
-              <span>Features</span>
-            </li>
-            <li>
-              <span>Resources</span>
-            </li>
-            <li>
-              <span>Pricing</span>
-            </li>
-          </ul>
-        </div>
+      <Row justify="center" className={styles.wrapper}>
+        <nav className={styles.nav}>
+          <Row justify="space-between">
+            <NavigationList
+              navAnimation={navAnimation}
+              navOffset={navOffset}
+              activeNav={activeNav}
+              handleClickNav={handleClickNav}
+            />
 
-        <div>
-          <ul>
-            <li>
-              <Button>Log in</Button>
-            </li>
-            <li>
-              <Button>Get Started</Button>
-            </li>
-          </ul>
-        </div>
+            <NavigationAuth />
+          </Row>
+        </nav>
       </Row>
-    </nav>
+    </div>
   );
 };
 

@@ -1,0 +1,132 @@
+.nav_group,
+.nav_group ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav_group ul {
+  margin: 0;
+}
+
+.nav_group img {
+  width: 80px;
+  margin: 0 30px 0 0;
+  z-index: 1;
+}
+
+.nav_group ul li {
+  list-style: none;
+}
+
+.portfolio_btn {
+  width: 70px !important;
+  height: 36px;
+  color: #727272 !important;
+  border-right: 1px solid #ececec !important;
+}
+
+.portfolio_btn svg {
+  font-size: 20px !important;
+  margin: 6px 0 -6px 0 !important;
+}
+
+.contact_btn_icn,
+.login_btn_icn {
+  margin: 0 15px;
+  height: 36px;
+  color: #727272 !important;
+  display: none;
+}
+
+.login_btn_icn {
+  margin: 0 15px 0 0;
+}
+
+.contact_btn_icn svg,
+.login_btn_icn svg {
+  font-size: 20px !important;
+  margin: 6px 0 -6px 0 !important;
+}
+
+.contact_btn,
+.login_btn {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  color: #727272 !important;
+  border: none;
+  height: 36px;
+  transition: color 0.1s ease-out;
+}
+
+.login_btn {
+  margin: 0 20px 0 0;
+}
+
+.contact_btn:hover,
+.login_btn:hover {
+  color: #000 !important;
+}
+
+.start_btn {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff !important;
+  background-color: #000 !important;
+  border: none;
+  height: 36px;
+  border-radius: 4px;
+  transition: background-color 0.1s ease-out;
+}
+
+.start_btn:hover {
+  background-color: #7e5bf5 !important;
+}
+
+.burger_btn {
+  height: 36px;
+  margin-left: 20px;
+  color: #000 !important;
+  display: none !important;
+}
+
+.burger_btn svg {
+  font-size: 20px !important;
+  color: #000 !important;
+  margin: 2px 0 -2px 0;
+}
+
+@media only screen and (max-width: 1300px) {
+  .login_btn,
+  .contact_btn {
+    display: none;
+  }
+
+  .contact_btn_icn,
+  .login_btn_icn {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .burger_btn {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav_group img {
+    width: 70px;
+  }
+
+  .portfolio_btn,
+  .contact_btn_icn,
+  .login_btn_icn {
+    display: none !important;
+  }
+
+  .start_btn {
+    font-size: 12px;
+  }
+}
