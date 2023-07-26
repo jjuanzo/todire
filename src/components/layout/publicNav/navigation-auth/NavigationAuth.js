@@ -1,12 +1,20 @@
 import { Button, Tooltip } from 'antd';
-import { CiMenuBurger } from 'react-icons/ci';
+import { useState } from 'react';
+import { CiMenuBurger, CiMenuFries } from 'react-icons/ci';
 import { VscAccount, VscGlobe, VscMail } from 'react-icons/vsc';
+import NavigationMobile from '../navigation-mobile';
 
 import styles from './style.module.css';
 
 const NavigationAuth = () => {
+  const [openMbNav, setOpenMbNav] = useState(false);
+
   return (
     <div className={styles.nav_group}>
+      <NavigationMobile
+        open={openMbNav}
+        handleClose={() => setOpenMbNav(false)}
+      />
       <ul>
         <li>
           <Tooltip title="My portfolio">
@@ -57,8 +65,9 @@ const NavigationAuth = () => {
         <li>
           <Button
             className={styles.burger_btn}
-            icon={<CiMenuBurger />}
+            icon={openMbNav ? <CiMenuFries /> : <CiMenuBurger />}
             type="link"
+            onClick={() => setOpenMbNav((state) => !state)}
           />
         </li>
       </ul>
