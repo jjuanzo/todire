@@ -50,6 +50,16 @@ const PublicNav = () => {
     );
   };
 
+  const handleClose = () => {
+    setActiveNav('');
+    setOpenNav(false);
+    setNavAnimation('slide');
+    setNavOffset((state) => ({
+      left: state.left,
+      width: 0,
+    }));
+  };
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, { passive: true });
 
@@ -77,7 +87,7 @@ const PublicNav = () => {
     >
       <NavigationDropdown
         open={openNav}
-        handleClose={() => setOpenNav(false)}
+        handleClose={handleClose}
         navAnimation={navAnimation}
         activeNav={activeNav}
       />

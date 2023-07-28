@@ -16,7 +16,7 @@ const NavigationDropdown = ({ open, handleClose, navAnimation, activeNav }) => {
       onClose={handleClose}
       open={open}
       zIndex={2}
-      height={activeNav === 'why' ? 700 : activeNav === 'features' ? 600 : 560}
+      height={activeNav === 'why' ? 620 : activeNav === 'features' ? 600 : 560}
       footer={
         <Row justify="center" className={styles.footer}>
           <div>
@@ -53,7 +53,11 @@ const NavigationDropdown = ({ open, handleClose, navAnimation, activeNav }) => {
       }}
     >
       {activeNav === 'why' ? (
-        <WhyDropdown active={activeNav === 'why'} navAnimation={navAnimation} />
+        <WhyDropdown
+          active={activeNav === 'why'}
+          navAnimation={navAnimation}
+          handleClose={handleClose}
+        />
       ) : null}
       {activeNav === 'features' ? (
         <FeaturesDropdown

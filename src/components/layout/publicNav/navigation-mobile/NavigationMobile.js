@@ -15,7 +15,7 @@ const NavigationMobile = ({ open, handleClose }) => {
     {
       key: 'why',
       label: 'Why Todire?',
-      children: <WhyDropdown active={activeNav} />,
+      children: <WhyDropdown active={activeNav} handleClose={handleClose} />,
     },
     {
       key: 'features',

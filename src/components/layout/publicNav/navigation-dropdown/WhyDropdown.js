@@ -4,7 +4,7 @@ import { BiLogoMongodb, BiLogoNodejs, BiLogoReact } from 'react-icons/bi';
 import { SiExpress } from 'react-icons/si';
 import styles from './style.module.css';
 
-const WhyDropdown = ({ active, navAnimation }) => {
+const WhyDropdown = ({ active, navAnimation, handleClose }) => {
   const firstTopFade = useSpring({
     delay: 150,
     from: { opacity: 0, marginTop: -20, marginBottom: 20 },
@@ -82,24 +82,32 @@ const WhyDropdown = ({ active, navAnimation }) => {
 
                     <ul>
                       <li>
-                        <h2>Overview</h2>
-                        <p>Become focused, organized, and calm with Todire</p>
+                        <a href="#overview" onClick={handleClose}>
+                          <h2>Overview</h2>
+                          <p>Become focused, organized, and calm with Todire</p>
+                        </a>
                       </li>
                       <li>
-                        <h2>Clear your mind</h2>
-                        <p>The fastest way to get tasks out of your head</p>
+                        <a href="#clear" onClick={handleClose}>
+                          <h2>Clear your mind</h2>
+                          <p>The fastest way to get tasks out of your head</p>
+                        </a>
                       </li>
                       <li>
-                        <h2>Focus on what’s important</h2>
-                        <p>Reach that mental clarity you’ve been longing for</p>
+                        <a href="#focus" onClick={handleClose}>
+                          <h2>Focus on what’s important</h2>
+                          <p>
+                            Reach that mental clarity you’ve been longing for
+                          </p>
+                        </a>
                       </li>
                       <li>
-                        <h2>Get it all done</h2>
-                        <p>Where work and personal tasks can finally coexist</p>
-                      </li>
-                      <li>
-                        <h2>In it for the long haul</h2>
-                        <p>A task manager you can trust for life</p>
+                        <a href="#get" onClick={handleClose}>
+                          <h2>Get it all done</h2>
+                          <p>
+                            Where work and personal tasks can finally coexist
+                          </p>
+                        </a>
                       </li>
                     </ul>
                   </animated.div>

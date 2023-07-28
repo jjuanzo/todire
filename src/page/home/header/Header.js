@@ -38,10 +38,6 @@ const Header = () => {
         </div>
       </Row>
 
-      <br />
-      <br />
-      <br />
-
       <Divider>
         <span className={styles.tech_divider}>
           BUILT USING LATEST TECHNOLOGIES
