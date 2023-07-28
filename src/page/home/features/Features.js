@@ -11,12 +11,13 @@ const Features = () => {
           <Row id="overview" justify="space-between" className={styles.wrapper}>
             <Col xxl={12} lg={12} md={24} xs={24}>
               <h2>OVERVIEW</h2>
-              <h1>From overwhelmed to on top of it.</h1>
+              <h1>Unleash Productivity, and Conquer Every Goal.</h1>
 
               <p>
-                Todire gives you the confidence that everything’s organized and
-                accounted for, so you can make progress on the things that are
-                important to you.
+                Your Ultimate Companion to Seamless Task Management - Stay
+                Organized, Stay Focused, and Stay Ahead with Our Intuitive
+                Todire App, Redefining the Way You Tackle Tasks and Achieve
+                Success!
               </p>
             </Col>
             <Col xxl={12} lg={12} md={24} xs={24}>
@@ -45,12 +46,13 @@ const Features = () => {
               xs={{ span: 24, order: 1 }}
             >
               <h2>CLEAR YOUR MIND</h2>
-              <h1>The fastest way to get tasks out of your head.</h1>
+              <h1>Your Personal Taskmaster.</h1>
 
               <p>
-                Type just about anything into the task field and Todire
-                one-of-its-kind natural language recognition will instantly fill
-                your to-do list.
+                The All-in-One Todire App Designed to Optimize Your Time,
+                Amplify Your Productivity, and Elevate Your Life - Simplify Your
+                To-Dos, Conquer Your Day, and Unlock Your Full Potential,
+                Embrace the Future of Task Management with Us!"
               </p>
             </Col>
           </Row>
@@ -58,12 +60,13 @@ const Features = () => {
           <Row id="focus" justify="space-between" className={styles.wrapper}>
             <Col xxl={12} lg={12} md={24} xs={24}>
               <h2>Focus on what’s important</h2>
-              <h1>Reach that mental clarity you’ve been longing for.</h1>
+              <h1>Unlock Your Full Productivity Potential.</h1>
 
               <p>
-                Your tasks are automatically sorted into Today, Upcoming, and
-                custom Filter views to help you prioritize your most important
-                work.
+                Seamlessly Organize Your Daily Endeavors, Prioritize with
+                Precision, and Celebrate the Art of Accomplishment - Todire,
+                Your Trusted Task Companion, Revolutionizing the Way You Work,
+                Live, and Thrive!"
               </p>
             </Col>
             <Col xxl={12} lg={12} md={24} xs={24}>

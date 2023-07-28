@@ -1,5 +1,5 @@
 .footer {
-  background-color: #111111;
+  background-color: #fcf5ee;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,13 +12,11 @@
 }
 
 .footer h1 {
-  color: #fff;
   font-size: 18px;
   margin-top: 10px;
 }
 
 .footer h2 {
-  color: #fff;
   font-size: 12px;
   max-width: 650px;
   text-align: center;
@@ -27,6 +25,7 @@
 
 .footer ul {
   display: flex;
+  list-style: none;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
@@ -38,11 +37,10 @@
 
 .footer ul li svg {
   font-size: 20px;
-  color: #fff;
+  color: #000000;
 }
 
 .footer p {
-  color: #fff;
   font-size: 12px;
   text-align: center;
 }
@@ -66,8 +64,6 @@
   }
 
   .footer p {
-    color: #fff;
     font-size: 11px;
-    text-align: center;
   }
 }

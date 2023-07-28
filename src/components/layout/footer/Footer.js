@@ -7,7 +7,7 @@ import styles from './style.module.css';
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <img src="/image/logo_full_white.svg" alt="Logo" />
+      <img src="/image/logo_full_black.svg" alt="Logo" />
       <h1>Empower Your Day, Organize Your Way!</h1>
 
       <h2>

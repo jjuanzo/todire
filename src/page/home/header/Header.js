@@ -15,10 +15,11 @@ const Header = () => {
               md={24}
               className={styles.header_section}
             >
-              <h1>The best platform for cross-functional work</h1>
+              <h1>Empower Your Day, Organize Your Way!</h1>
               <h2>
-                Create clear, multi-functional to-do lists to easily manage your
-                ideas and work from anywhere so you never forget anything again.
+                Unlock the Power of Productivity: Your Personalized Task
+                Management Companion - Seamlessly Organize, Prioritize, and
+                Conquer Your Day with Our Intuitive Todire App
               </h2>
 
               <Row>
