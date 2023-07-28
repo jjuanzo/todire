@@ -165,7 +165,8 @@
   }
 
   .wrapper {
-    margin-bottom: 100px;
+    padding: 70px 0;
+    margin-bottom: 0;
   }
 
   .wrapper::before {

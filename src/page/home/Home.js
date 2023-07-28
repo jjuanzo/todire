@@ -1,4 +1,4 @@
-import { PublicNav } from '../../components';
+import { Footer, PublicNav } from '../../components';
 
 import Features from './features';
 import Header from './header';
@@ -10,6 +10,8 @@ const Home = () => {
 
       <Header />
       <Features />
+
+      <Footer />
     </div>
   );
 };
