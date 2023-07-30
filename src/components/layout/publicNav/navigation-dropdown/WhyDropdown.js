@@ -84,28 +84,26 @@ const WhyDropdown = ({ active, navAnimation, handleClose }) => {
                       <li>
                         <a href="#overview" onClick={handleClose}>
                           <h2>Overview</h2>
-                          <p>Become focused, organized, and calm with Todire</p>
+                          <p>Unleash Productivity, and Conquer Every Goal.</p>
                         </a>
                       </li>
                       <li>
                         <a href="#clear" onClick={handleClose}>
                           <h2>Clear your mind</h2>
-                          <p>The fastest way to get tasks out of your head</p>
+                          <p>Your Personal Taskmaster.</p>
                         </a>
                       </li>
                       <li>
                         <a href="#focus" onClick={handleClose}>
                           <h2>Focus on what’s important</h2>
-                          <p>
-                            Reach that mental clarity you’ve been longing for
-                          </p>
+                          <p>Unlock Your Full Productivity Potential.</p>
                         </a>
                       </li>
                       <li>
                         <a href="#get" onClick={handleClose}>
                           <h2>Get it all done</h2>
                           <p>
-                            Where work and personal tasks can finally coexist
+                            Where work and personal tasks can finally coexist.
                           </p>
                         </a>
                       </li>

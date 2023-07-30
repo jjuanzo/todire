@@ -37,7 +37,7 @@ const NavigationDropdown = ({ open, handleClose, navAnimation, activeNav }) => {
               </li>
               <li>
                 <a
-                  href="https://jjuanzo.github.io/portfolio/"
+                  href="https://jjuanzo.github.io/portfolio/resume.pdf"
                   target="_blank"
                   rel="noreferrer"
                 >
