@@ -1,9 +1,7 @@
 .container {
   width: 100%;
-  height: calc(100vh - 200px);
-  min-height: 736px;
   max-width: 1400px;
-  padding: 60px 60px 0 60px;
+  padding: 120px 60px;
 }
 
 .header_section {
@@ -57,8 +55,6 @@
 
 .guide_img {
   width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .tech_divider {
@@ -95,7 +91,7 @@
 
 @media only screen and (max-width: 1000px) {
   .container {
-    padding: 8px 20px;
+    padding: 8px 20px 50px 20px;
   }
 }
 

@@ -2,6 +2,7 @@ import { animated, useSpring } from '@react-spring/web';
 import { Col, Row, Tag } from 'antd';
 import { BiLogoMongodb, BiLogoNodejs, BiLogoReact } from 'react-icons/bi';
 import { SiExpress } from 'react-icons/si';
+import { HashLink } from 'react-router-hash-link';
 import styles from './style.module.css';
 
 const WhyDropdown = ({ active, navAnimation, handleClose }) => {
@@ -82,30 +83,30 @@ const WhyDropdown = ({ active, navAnimation, handleClose }) => {
 
                     <ul>
                       <li>
-                        <a href="#overview" onClick={handleClose}>
+                        <HashLink to="/#overview" onClick={handleClose}>
                           <h2>Overview</h2>
                           <p>Unleash Productivity, and Conquer Every Goal.</p>
-                        </a>
+                        </HashLink>
                       </li>
                       <li>
-                        <a href="#clear" onClick={handleClose}>
+                        <HashLink to="/#clear" onClick={handleClose}>
                           <h2>Clear your mind</h2>
                           <p>Your Personal Taskmaster.</p>
-                        </a>
+                        </HashLink>
                       </li>
                       <li>
-                        <a href="#focus" onClick={handleClose}>
+                        <HashLink to="/#focus" onClick={handleClose}>
                           <h2>Focus on what’s important</h2>
                           <p>Unlock Your Full Productivity Potential.</p>
-                        </a>
+                        </HashLink>
                       </li>
                       <li>
-                        <a href="#get" onClick={handleClose}>
+                        <HashLink to="/#get" onClick={handleClose}>
                           <h2>Get it all done</h2>
                           <p>
                             Where work and personal tasks can finally coexist.
                           </p>
-                        </a>
+                        </HashLink>
                       </li>
                     </ul>
                   </animated.div>
@@ -122,28 +123,45 @@ const WhyDropdown = ({ active, navAnimation, handleClose }) => {
                       <Col>
                         <ul>
                           <li>
-                            <h2>Project Management</h2>
-                            <p>
-                              Plan, track, and manage team projects from start
-                              to finish
-                            </p>
+                            <HashLink
+                              to="/workflow#project"
+                              onClick={handleClose}
+                            >
+                              <h2>Project Management</h2>
+                              <p>
+                                Plan, track, and manage team projects from start
+                                to finish
+                              </p>
+                            </HashLink>
                           </li>
                           <li>
-                            <h2>Campaign Management</h2>
-                            <p>
-                              Create, launch, and track your marketing campaigns
-                            </p>
+                            <HashLink
+                              to="/workflow#solution"
+                              onClick={handleClose}
+                            >
+                              <h2>Solution</h2>
+                              <p>Empower Your Productivity</p>
+                            </HashLink>
                           </li>
                           <li>
-                            <h2>Creative Production</h2>
-                            <p>Design, review and ship inspirational work</p>
+                            <HashLink to="/workflow#risk" onClick={handleClose}>
+                              <h2>Identify Risks</h2>
+                              <p>
+                                Task Security at Its Best: Identifying Risks
+                              </p>
+                            </HashLink>
                           </li>
                           <li>
-                            <h2>Request Tracking</h2>
-                            <p>
-                              Track, prioritize, and fulfill the task of your
-                              teams
-                            </p>
+                            <HashLink
+                              to="/workflow#start"
+                              onClick={handleClose}
+                            >
+                              <h2>Campaigns</h2>
+                              <p>
+                                Hit the ground running with templates designed
+                                for your use case
+                              </p>
+                            </HashLink>
                           </li>
                         </ul>
                       </Col>
@@ -151,23 +169,39 @@ const WhyDropdown = ({ active, navAnimation, handleClose }) => {
                       <Col>
                         <ul>
                           <li>
-                            <h2>
-                              Remote teams <Tag color="#7e5bf6">POPULAR</Tag>
-                            </h2>
-                            <p>Collaborate and manage work from anywhere</p>
+                            <HashLink
+                              to="/workflow#remote"
+                              onClick={handleClose}
+                            >
+                              <h2>
+                                Remote teams <Tag color="#7e5bf6">POPULAR</Tag>
+                              </h2>
+                              <p>Collaborate and manage work from anywhere</p>
+                            </HashLink>
                           </li>
                           <li>
-                            <h2>Productivity</h2>
-                            <p>
-                              Be more deliberate about how you manage your time
-                            </p>
+                            <HashLink
+                              to="/workflow#productivity"
+                              onClick={handleClose}
+                            >
+                              <h2>Productivity</h2>
+                              <p>
+                                Be more deliberate about how you manage your
+                                time
+                              </p>
+                            </HashLink>
                           </li>
                           <li>
-                            <h2>Agile Management</h2>
-                            <p>
-                              Build fast, ship often, and track it all in one
-                              place
-                            </p>
+                            <HashLink
+                              to="/workflow#agile"
+                              onClick={handleClose}
+                            >
+                              <h2>Agile Management</h2>
+                              <p>
+                                Build fast, ship often, and track it all in one
+                                place
+                              </p>
+                            </HashLink>
                           </li>
                         </ul>
                       </Col>

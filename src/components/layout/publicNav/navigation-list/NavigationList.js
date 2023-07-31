@@ -19,7 +19,9 @@ const NavigationList = ({
         }
         style={{ left: navOffset.left, width: navOffset.width }}
       />
-      <img src="/image/logo_full.svg" alt="Logo" />
+      <Link to="/">
+        <img src="/image/logo_full.svg" alt="Logo" />
+      </Link>
       <ul className={styles.nav_links}>
         <li
           className={activeNav === 'why' ? styles.nav_link_active : ''}

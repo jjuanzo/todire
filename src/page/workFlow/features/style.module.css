@@ -1,0 +1,156 @@
+.container {
+  width: 100%;
+  max-width: 1400px;
+  padding: 60px 60px 0 60px;
+}
+
+.container h1 {
+  padding-top: 20px;
+  max-width: 750px;
+  font-size: 31px;
+  font-weight: normal;
+  color: #000;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  line-height: 1.2;
+  position: relative;
+}
+
+.container p {
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #000;
+  padding-bottom: 40px;
+  max-width: 750px;
+  line-height: 1.6;
+}
+
+.section_1,
+.section_3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.section_1 img,
+.section_3 img {
+  width: 80px;
+  margin-bottom: 40px;
+}
+
+.section_1 h2,
+.section_3 h2 {
+  font-size: 16px;
+  max-width: 400px;
+}
+
+.section_1 p,
+.section_3 p {
+  padding-right: 20px;
+}
+
+.section_2 h6,
+.section_5 h6 {
+  font-size: 18px;
+}
+
+.section_2 img,
+.section_5 img {
+  width: 100%;
+}
+
+.start_btn {
+  height: 50px;
+  background-color: #000;
+  color: white !important;
+  font-weight: bold;
+  width: 148px;
+  border: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.section_4 h2 {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.section_4 ul {
+  padding-right: 40px;
+  list-style: none;
+}
+
+.section_4 ul li {
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+.section_4 ul li svg {
+  color: #00bf9c !important;
+  font-size: 20px;
+  margin: 4px 10px -4px 0;
+}
+
+.section_5 h1 {
+  max-width: none;
+  text-align: center;
+}
+
+.section_6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_6 h1 {
+  max-width: none;
+  text-align: center;
+}
+
+.section_6 p {
+  text-align: center;
+}
+
+.section_6_wrapper {
+  width: 100%;
+}
+
+.section_6_wrapper svg {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.section_6_wrapper h2,
+.section_6_wrapper p {
+  text-align: left;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 1700px) {
+  .container {
+    max-width: 1500px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    padding: 8px 20px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .container h1 {
+    font-size: 31px;
+  }
+
+  .section_1,
+  .section_3 {
+    display: block;
+  }
+
+  .section_1 p,
+  .section_3 p {
+    padding: 0 0 60px 0;
+  }
+}
